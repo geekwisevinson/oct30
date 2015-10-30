@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>User Authentication App:Sign Up</title>
+    <link rel="stylesheet" href="css/sign_up.css"/>
+
+
+</head>
+<body>
+<div>
+    <h1>SIGN UP FORM</h1>
+</div>
+<form>
+    <h3 class='form_item'>Sign Up:</h3>
+    <input id="input_username" class='form_item' type="text"  placeholder='UserName'/>
+    <span id='alert_username' role="alert" class='alerts alert_hidden ' > UserName is Already in use</span>
+    <input id="input_email" class='form_item' type="email"  placeholder='Email'/>
+    <span id="alert_email" role="alert" class='alerts alert_hidden ' > Email is Already in use</span>
+    <input id="input_password" class='form_item' type="password"  placeholder="Password"/>
+    <span id="alert_password" role="alert" class='alerts alert_hidden ' > Password is Invalid</span>
+    <input id="input_password_confirm" class='form_item' type="password"  placeholder="Confirm Password"/>
+    <span id="alert_password_mismatch" role="alert" class='alerts alert_hidden ' > Passwords do not match</span>
+    <span id="alert_blank" role="alert" class='alerts alert_hidden ' > Required fields can not be blank</span>
+    <button  id="button_submit_sign_up" class='form_item' type="button">Sign Up</button>
+    <p>already on GITCRUD <a id='login' href="index.html">Login now</a></p>
+</form>
+
+<script src="js/github_api.js"></script>
+<script type="text/javascript" src="js/mandrill_api.js"></script>
+<script src="js/sign_up.js"></script>
+
+</body>
+</html>
